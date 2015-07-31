@@ -22,19 +22,19 @@
 (defvar proof-assistant-cusgrp nil
   "Symbol for the customization group of the user options for the proof assistant.
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site, from the name given in
+stub defined in proof-general, from the name given in
 proof-assistant-table.")
 
 (defvar proof-assistant-internals-cusgrp nil
   "Symbol for the customization group of the PG internal settings proof assistant.
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site, from the name given in
+stub defined in proof-general, from the name given in
 proof-assistant-table.")
 
 (defvar proof-assistant ""
   "Name of the proof assistant Proof General is using.
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site, from names given in `proof-assistant-table'.")
+stub defined in proof-general, from names given in `proof-assistant-table'.")
 
 (defvar proof-assistant-symbol nil
   "Symbol for the proof assistant Proof General is using.
@@ -46,28 +46,28 @@ If this is nil, the hook functions in `proof-ready-for-assistant-hook'
 are yet to be run.
 
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site, from the symbols given in
+stub defined in proof-general, from the symbols given in
 `proof-assistant-table'.")
 
 (defvar proof-mode-for-shell nil
   "Mode function for proof shell buffers.
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site to <PA>-shell-mode.")
+stub defined in proof-general to <PA>-shell-mode.")
 
 (defvar proof-mode-for-response nil
   "Mode function for proof response buffer (and trace buffer, if used).
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site to <PA>-response-mode.")
+stub defined in proof-general to <PA>-response-mode.")
 
 (defvar proof-mode-for-goals nil
   "Mode for proof state display buffers.
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site to <PA>-goals-mode.")
+stub defined in proof-general to <PA>-goals-mode.")
 
 (defvar proof-mode-for-script nil
   "Mode for proof script buffers.
 Do not change this variable! It is set automatically by the mode
-stub defined in proof-site to <PA>-mode.")
+stub defined in proof-general to <PA>-mode.")
 
 (defvar proof-ready-for-assistant-hook nil
   "Hook functions to run after PG is configured for a proof assistant.

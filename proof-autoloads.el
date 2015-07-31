@@ -854,11 +854,11 @@ processing.
 
 ;;;***
 
-;;;### (autoloads (proof-ready-for-assistant) "proof-site" "proof-site.el"
+;;;### (autoloads (proof-ready-for-assistant) "proof-general" "proof-general.el"
 ;;;;;;  (20119 3136))
-;;; Generated autoloads from proof-site.el
+;;; Generated autoloads from proof-general.el
 
-(autoload 'proof-ready-for-assistant "proof-site" "\
+(autoload 'proof-ready-for-assistant "proof-general" "\
 Configure PG for symbol ASSISTANTSYM, name ASSISTANT-NAME.
 If ASSISTANT-NAME is omitted, look up in `proof-assistant-table'.
 

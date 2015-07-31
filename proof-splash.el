@@ -25,7 +25,7 @@
 
 ;;; Code:
 
-(require 'proof-site)
+(require 'proof-general)
 
 ;;
 ;; Customization of splash screen

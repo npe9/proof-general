@@ -26,7 +26,7 @@
 ;;
 ;;
 
-(require 'proof-site)			; proof-assitant-symbol
+(require 'proof-general)			; proof-assitant-symbol
 (require 'proof-compat)			; pg-custom-undeclare-variable
 (require 'proof-autoloads)		; proof-debug
 

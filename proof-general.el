@@ -1,4 +1,4 @@
-;;; proof-site.el -- Loading stubs for Proof General.
+;;; proof-general.el -- Loading stubs for Proof General.
 ;;
 ;; Copyright (C) 1998-2003 LFCS Edinburgh.
 ;; Author:      David Aspinall <David.Aspinall@ed.ac.uk>
@@ -121,7 +121,7 @@
   (proof-home-directory-fn)
   "Directory where Proof General is installed.  Ends with slash.
 Default value taken from environment variable `PROOFGENERAL_HOME' if set,
-otherwise based on where the file `proof-site.el' was loaded from.
+otherwise based on where the file `proof-general.el' was loaded from.
 You can use customize to set this variable."
   :type 'directory
   :group 'proof-general-internals)
@@ -231,10 +231,10 @@ To avoid accidently invoking a proof assistant you don't have,
 only select the proof assistants you (or your site) may need.
 
 You can select which proof assistants you want by setting this
-variable before `proof-site.el' is loaded, or by setting
+variable before `proof-general.el' is loaded, or by setting
 the environment variable `PROOFGENERAL_ASSISTANTS' to the
 symbols you want, for example \"lego isa\".  Or you can
-edit the file `proof-site.el' itself.
+edit the file `proof-general.el' itself.
 
 Note: to change proof assistant, you must start a new Emacs session.")
   :type (cons 'set
@@ -312,7 +312,7 @@ the lisp variable `proof-assistants', or the contents of `proof-assistant-table'
 	 (tableentry 
 	  (or (assoc assistant
 		     proof-assistant-table)
-	      (error "Symbol %s is not in proof-assistant-table (in proof-site)"
+	      (error "Symbol %s is not in proof-assistant-table (in proof-general)"
 		     (symbol-name assistant))))
 	 (assistant-name (nth 1 tableentry))
 	 (regexp	 (or (nth 3 tableentry)
@@ -393,6 +393,6 @@ the lisp variable `proof-assistants', or the contents of `proof-assistant-table'
 		     
 
 
-(provide 'proof-site)
+(provide 'proof-general)
 
-;;; proof-site.el ends here
+;;; proof-general.el ends here
