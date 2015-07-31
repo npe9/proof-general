@@ -20,7 +20,7 @@
 ;; Give Emacs version mismatch error here.
 ;;
 ;; This file is loaded early, and may be first compiled file
-;; loaded if proof-site.el is loaded instead of proof-site.elc.
+;; loaded if proof-general.el is loaded instead of proof-general.elc.
 ;;
 (eval-and-compile
   (defun pg-emacs-version-cookie ()
@@ -43,7 +43,7 @@
 
 
 
-(require 'proof-site)			; basic vars
+(require 'proof-general)			; basic vars
 (require 'proof-compat)		        ; compatibility
 (require 'pg-pamacs)			; macros for pa config
 (require 'proof-config)			; config vars
